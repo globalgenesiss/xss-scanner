@@ -102,7 +102,6 @@ formulário GET/POST), a ferramenta injeta cada payload da wordlist com um
 - **Heurística por reflexão textual**, não executa JavaScript. Não cobre:
   - XSS **DOM-based** (depende de execução no navegador — próximo passo natural seria integrar Selenium/Playwright e checar `alert()`/mutação do DOM real).
   - XSS **stored** que só reflete em outra página/sessão.
-- **Falsos positivos são esperados**: o contexto de reflexão importa (dentro de `<script>`, atributo, comentário HTML, texto puro). Um payload com `javascript:` sem metacaracteres HTML, por exemplo, pode "passar" mesmo após `escape()` se for refletido como texto puro (não executável nesse contexto). **Sempre valide manualmente** o candidato antes de reportar como vulnerabilidade confirmada (ex: reproduzindo no Burp Suite / navegador).
 - Formulários com CSRF token dinâmico podem falhar (o token é reenviado com valor antigo/capturado no crawling).
 
 ## Mitigação (resumo)
