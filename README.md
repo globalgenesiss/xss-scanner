@@ -4,13 +4,6 @@ Ferramenta de automação de recon + teste de XSS refletido.
 
 **Fluxo:** Reconhecimento (subfinder) → Crawling (parâmetros/formulários) → Exploração (injeção de payloads) → Relatório/Mitigação.
 
-> ⚠️ **Uso autorizado apenas.** Use somente em ativos que você possui ou tem
-> autorização explícita por escrito para testar (ex: escopo de bug bounty,
-> contrato de pentest). Testes não autorizados podem configurar crime
-> (Lei 12.737/2012 e Marco Civil da Internet no Brasil, CFAA nos EUA,
-> Computer Misuse Act no Reino Unido, etc). A ferramenta pede confirmação
-> de autorização antes de rodar (`-y` pula o prompt, assumindo que você
-> já confirmou).
 
 ## Instalação
 
